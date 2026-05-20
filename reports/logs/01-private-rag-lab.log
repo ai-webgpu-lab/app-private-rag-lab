@@ -1,0 +1,112 @@
+repo=app-private-rag-lab
+scenario=Private RAG Lab
+url_search=(default)
+captured_at=2026-05-20T15:34:29.748Z
+browser=Chromium 147.0.7727.15
+headless=true
+meta_scenario=private-rag-lab-demo
+status=success
+
+[page-console]
+(none)
+
+[harness-logs]
+./reports/logs/01-private-rag-lab.log
+
+[result-json]
+{
+  "meta": {
+    "repo": "app-private-rag-lab",
+    "commit": "31f1eea",
+    "timestamp": "2026-05-20T15:34:29.608Z",
+    "owner": "ai-webgpu-lab",
+    "track": "integration",
+    "scenario": "private-rag-lab-demo",
+    "notes": "private fixture; docs=4; chunks=9; questions=4; local_only=true; automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-05-20T15:34:29.748Z",
+      "captured_by": "codex"
+    },
+    "capture_scenario_id": "01-private-rag-lab"
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 32,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "not-applicable",
+      "required_features": [],
+      "limits": {}
+    },
+    "backend": "browser-fixture",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "warm"
+  },
+  "workload": {
+    "kind": "rag",
+    "name": "private-rag-lab-demo",
+    "input_profile": "4-private-notes-4-questions",
+    "dataset": "private-notes-fixture-v1",
+    "model_id": "private-notes-fixture-v1"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 356.2,
+      "init_ms": 12.9,
+      "success_rate": 1,
+      "peak_memory_note": "32 GB reported by browser",
+      "error_type": ""
+    },
+    "rag": {
+      "ingest_ms_per_page": 0.02,
+      "chunk_count": 9,
+      "embed_total_ms": 12.9,
+      "retrieve_ms": 0.25,
+      "rerank_ms": 0.37,
+      "answer_ttft_ms": 17.3,
+      "answer_total_ms": 29.6,
+      "citation_hit_rate": 1
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/01-private-rag-lab.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/app-private-rag-lab/",
+    "app_surface_adapter": {
+      "id": "deterministic-observatory",
+      "label": "Deterministic Observatory",
+      "version": "1.0.0",
+      "capabilities": [
+        "preset-replay",
+        "renderer-scorecard",
+        "telemetry-record"
+      ],
+      "surfaceType": "synthetic",
+      "isReal": false,
+      "status": "deterministic",
+      "message": "Deterministic harness — replace by registering a real app surface adapter."
+    },
+    "screenshots": [
+      "./reports/screenshots/01-private-rag-lab.png"
+    ]
+  }
+}

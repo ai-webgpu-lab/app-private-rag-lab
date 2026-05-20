@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "repo": "app-private-rag-lab",
+    "commit": "31f1eea",
+    "timestamp": "2026-05-20T15:34:32.823Z",
+    "owner": "ai-webgpu-lab",
+    "track": "integration",
+    "scenario": "private-rag-lab-demo",
+    "notes": "private fixture; docs=4; chunks=9; questions=4; local_only=true; realAdapter=fallback(manifest fetch failed for https://ai-webgpu-lab.github.io/app-private-rag-lab/manifests/corpus-v1.json); automation=playwright-chromium",
+    "capture_context": {
+      "tool": "playwright-chromium",
+      "browser_name": "Chromium",
+      "browser_version": "147.0.7727.15",
+      "headless": true,
+      "captured_at": "2026-05-20T15:34:33.049Z",
+      "captured_by": "codex"
+    },
+    "capture_scenario_id": "02-private-rag-lab-real-private-rag",
+    "capture_url_search": "?mode=real-private-rag"
+  },
+  "environment": {
+    "browser": {
+      "name": "Chrome",
+      "version": "147.0.7727.15"
+    },
+    "os": {
+      "name": "Linux",
+      "version": "unknown"
+    },
+    "device": {
+      "name": "Linux x86_64",
+      "class": "desktop-high",
+      "cpu": "16 threads",
+      "memory_gb": 32,
+      "power_mode": "unknown"
+    },
+    "gpu": {
+      "adapter": "not-applicable",
+      "required_features": [],
+      "limits": {}
+    },
+    "backend": "browser-fixture",
+    "fallback_triggered": false,
+    "worker_mode": "main",
+    "cache_state": "warm"
+  },
+  "workload": {
+    "kind": "rag",
+    "name": "private-rag-lab-demo",
+    "input_profile": "4-private-notes-4-questions",
+    "dataset": "private-notes-fixture-v1",
+    "model_id": "private-notes-fixture-v1"
+  },
+  "metrics": {
+    "common": {
+      "time_to_interactive_ms": 257.9,
+      "init_ms": 9.3,
+      "success_rate": 1,
+      "peak_memory_note": "32 GB reported by browser",
+      "error_type": ""
+    },
+    "rag": {
+      "ingest_ms_per_page": 0,
+      "chunk_count": 9,
+      "embed_total_ms": 9.3,
+      "retrieve_ms": 0.1,
+      "rerank_ms": 0.02,
+      "answer_ttft_ms": 17.05,
+      "answer_total_ms": 29.6,
+      "citation_hit_rate": 1
+    }
+  },
+  "status": "success",
+  "artifacts": {
+    "raw_logs": [
+      "./reports/logs/02-private-rag-lab-real-private-rag.log"
+    ],
+    "deploy_url": "https://ai-webgpu-lab.github.io/app-private-rag-lab/",
+    "app_surface_adapter": {
+      "id": "stub-not-connected",
+      "label": "App Surface Adapter Stub (not connected)",
+      "status": "not-connected",
+      "isReal": false,
+      "version": "n/a",
+      "capabilities": [
+        "preset-replay",
+        "renderer-scorecard",
+        "telemetry-record"
+      ],
+      "surfaceType": "stub",
+      "message": "No real app surface adapter has registered for mode='real-private-rag'. Falling back to the deterministic harness."
+    },
+    "screenshots": [
+      "./reports/screenshots/02-private-rag-lab-real-private-rag.png"
+    ]
+  }
+}
